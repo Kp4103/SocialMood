@@ -16,15 +16,15 @@ from sklearn.preprocessing import LabelEncoder
 # Load environment variables from .env file
 load_dotenv()
 
-# Access the Reddit credentials from environment variables
-REDDIT_CLIENT_ID = os.getenv("REDDIT_CLIENT_ID")
-REDDIT_CLIENT_SECRET = os.getenv("REDDIT_CLIENT_SECRET")
-REDDIT_USER_AGENT = os.getenv("REDDIT_USER_AGENT")
-
 # Download NLTK resources
 nltk.download('punkt')
 nltk.download('stopwords')
 nltk.download('wordnet')
+
+# Access the Reddit credentials from environment variables
+REDDIT_CLIENT_ID = os.getenv("REDDIT_CLIENT_ID")
+REDDIT_CLIENT_SECRET = os.getenv("REDDIT_CLIENT_SECRET")
+REDDIT_USER_AGENT = os.getenv("REDDIT_USER_AGENT")
 
 # Initialize lemmatizer and stopwords
 lemmatizer = WordNetLemmatizer()

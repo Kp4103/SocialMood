@@ -82,7 +82,7 @@ def predict_sentiment(text):
     return label_encoder.inverse_transform(prediction)[0]
 
 # Streamlit UI
-st.title("Sentiment Analysis App")
+st.title("SocialMood")
 
 # Dropdown for choosing between text or Reddit link input
 input_choice = st.radio("Choose an option:", ('Enter text', 'Enter Reddit URL'))

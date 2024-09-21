@@ -52,7 +52,7 @@ def extract_text_from_reddit(url):
         return f"Error retrieving content from Reddit: {e}"
 
 # Load dataset (sample data preparation)
-data = pd.read_csv(r"C:\Users\Kunal\Downloads\Compressed\archive\train.csv", encoding='ISO-8859-1')
+data = pd.read_csv(r"train.csv", encoding='ISO-8859-1')
 
 # Preprocess text data
 data['text'] = data['text'].fillna('').astype(str)

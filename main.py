@@ -20,6 +20,7 @@ load_dotenv()
 nltk.download('punkt')
 nltk.download('stopwords')
 nltk.download('wordnet')
+nltk.download('punkt_tab')
 
 # Access the Reddit credentials from environment variables
 REDDIT_CLIENT_ID = os.getenv("REDDIT_CLIENT_ID")
